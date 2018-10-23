@@ -72,21 +72,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);E:\Gmk1\packages\boost.1.66.0.0\lib\native\include</IncludePath>
-    <LibraryPath>E:\Data\boost_1_66_0\lib64-msvc-14.1;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;E:\Gmk1\packages\boost_filesystem-vc141.1.66.0.0\lib\native;E:\Gmk1\packages\boost_program_options-vc141.1.66.0.0\lib\native;E:\Gmk1\packages\boost_system-vc141.1.66.0.0\lib\native</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\packages\boost.1.66.0.0\lib\native\include</IncludePath>
+    <LibraryPath>..\packages\boost_1_66_0\lib64-msvc-14.1;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;..\packages\boost_filesystem-vc141.1.66.0.0\lib\native;..\packages\boost_program_options-vc141.1.66.0.0\lib\native;..\packages\boost_system-vc141.1.66.0.0\lib\native</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>..\packages\boost_filesystem-vc141.1.66.0.0\lib\native;..\packages\boost_program_options-vc141.1.66.0.0\lib\native;..\packages\boost_system-vc141.1.66.0.0\lib\native;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\Gmk1\packages\boost.1.66.0.0\lib\native\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
-    <LibraryPath>E:\Data\boost_1_66_0\lib64-msvc-14.1;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;E:\Gmk1\packages\boost_system-vc141.1.66.0.0\lib\native;E:\Gmk1\packages\boost_program_options-vc141.1.66.0.0\lib\native;E:\Gmk1\packages\boost_filesystem-vc141.1.66.0.0\lib\native</LibraryPath>
+    <IncludePath>..\packages\boost.1.66.0.0\lib\native\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>..\packages\boost_1_66_0\lib64-msvc-14.1;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;..\packages\boost_system-vc141.1.66.0.0\lib\native;..\packages\boost_program_options-vc141.1.66.0.0\lib\native;..\packages\boost_filesystem-vc141.1.66.0.0\lib\native</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <LibraryPath>E:\Gmk1\packages\boost_filesystem-vc141.1.66.0.0\lib\native;E:\Gmk1\packages\boost_program_options-vc141.1.66.0.0\lib\native;E:\Gmk1\packages\boost_system-vc141.1.66.0.0\lib\native;$(LibraryPath)</LibraryPath>
-    <IncludePath>E:\Gmk1\packages\boost.1.66.0.0\lib\native\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\packages\boost_filesystem-vc141.1.66.0.0\lib\native;..\packages\boost_program_options-vc141.1.66.0.0\lib\native;..\packages\boost_system-vc141.1.66.0.0\lib\native;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\packages\boost.1.66.0.0\lib\native\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>

@@ -116,9 +116,6 @@
     <ClCompile Include="Evaluation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Gmk0.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="NN\GTP.cpp">
       <Filter>NN</Filter>
     </ClCompile>
@@ -159,6 +156,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="PriorRenju.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Gmk1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
