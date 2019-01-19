@@ -23,7 +23,7 @@
     <ProjectGuid>{B85BFD09-2921-44E3-BF8B-F7449A15E6CE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>match</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -150,11 +150,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Board.cpp" />
-    <ClCompile Include="Common.cpp" />
-    <ClCompile Include="ConsolePrt.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="match.cpp" />
+    <ClCompile Include="..\..\match\Board.cpp" />
+    <ClCompile Include="..\..\match\Common.cpp" />
+    <ClCompile Include="..\..\match\ConsolePrt.cpp" />
+    <ClCompile Include="..\..\match\Game.cpp" />
+    <ClCompile Include="..\..\match\match.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.h" />

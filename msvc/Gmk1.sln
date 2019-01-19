@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cppGmk", "cppsrc\cppGmk.vcxproj", "{28D3C0BD-EBF2-44EA-957D-EEDD10986876}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cppGmk", "VS2017\cppGmk.vcxproj", "{28D3C0BD-EBF2-44EA-957D-EEDD10986876}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "match", "match\match.vcxproj", "{B85BFD09-2921-44E3-BF8B-F7449A15E6CE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "match", "VS2017\match.vcxproj", "{B85BFD09-2921-44E3-BF8B-F7449A15E6CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

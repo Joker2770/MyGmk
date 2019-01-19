@@ -23,7 +23,7 @@
     <ProjectGuid>{28D3C0BD-EBF2-44EA-957D-EEDD10986876}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>cppGmk</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <ProjectName>cppGmk</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -160,28 +160,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\cppsrc\NN\CL\cl2.hpp" />
+    <ClInclude Include="..\..\cppsrc\NN\config.h" />
+    <ClInclude Include="..\..\cppsrc\NN\GTP.h" />
+    <ClInclude Include="..\..\cppsrc\NN\Im2Col.h" />
+    <ClInclude Include="..\..\cppsrc\NN\Network.h" />
+    <ClInclude Include="..\..\cppsrc\NN\NNCache.h" />
+    <ClInclude Include="..\..\cppsrc\NN\nn_cpp.h" />
+    <ClInclude Include="..\..\cppsrc\NN\OpenCL.h" />
+    <ClInclude Include="..\..\cppsrc\NN\OpenCLScheduler.h" />
+    <ClInclude Include="..\..\cppsrc\NN\Random.h" />
+    <ClInclude Include="..\..\cppsrc\NN\SMP.h" />
+    <ClInclude Include="..\..\cppsrc\NN\targetver.h" />
+    <ClInclude Include="..\..\cppsrc\NN\ThreadPool.h" />
+    <ClInclude Include="..\..\cppsrc\NN\Tuner.h" />
+    <ClInclude Include="..\..\cppsrc\NN\Utils.h" />
     <ClInclude Include="Board.h" />
     <ClInclude Include="ConsolePrt.h" />
     <ClInclude Include="Evaluation.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameData.h" />
     <ClInclude Include="net_config.h" />
-    <ClInclude Include="NN\CL\cl2.hpp" />
-    <ClInclude Include="NN\config.h" />
-    <ClInclude Include="NN\GTP.h" />
-    <ClInclude Include="NN\Im2Col.h" />
-    <ClInclude Include="NN\Network.h" />
-    <ClInclude Include="NN\NNCache.h" />
-    <ClInclude Include="NN\nn_cpp.h" />
-    <ClInclude Include="NN\OpenCL.h" />
-    <ClInclude Include="NN\OpenCLScheduler.h" />
-    <ClInclude Include="NN\Random.h" />
-    <ClInclude Include="NN\SMP.h" />
-    <ClInclude Include="NN\stdafx.h" />
-    <ClInclude Include="NN\targetver.h" />
-    <ClInclude Include="NN\ThreadPool.h" />
-    <ClInclude Include="NN\Tuner.h" />
-    <ClInclude Include="NN\Utils.h" />
     <ClInclude Include="PriorGomoku.h" />
     <ClInclude Include="PriorRenju.h" />
     <ClInclude Include="Search.h" />
@@ -189,26 +188,25 @@
     <ClInclude Include="Common.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Board.cpp" />
-    <ClCompile Include="ConsolePrt.cpp" />
-    <ClCompile Include="Evaluation.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Gmk1.cpp" />
-    <ClCompile Include="NN\GTP.cpp" />
-    <ClCompile Include="NN\Network.cpp" />
-    <ClCompile Include="NN\NNCache.cpp" />
-    <ClCompile Include="NN\nn_cpp.cpp" />
-    <ClCompile Include="NN\OpenCL.cpp" />
-    <ClCompile Include="NN\OpenCLScheduler.cpp" />
-    <ClCompile Include="NN\Random.cpp" />
-    <ClCompile Include="NN\SMP.cpp" />
-    <ClCompile Include="NN\stdafx.cpp" />
-    <ClCompile Include="NN\Tuner.cpp" />
-    <ClCompile Include="NN\Utils.cpp" />
-    <ClCompile Include="PriorGomoku.cpp" />
-    <ClCompile Include="PriorRenju.cpp" />
-    <ClCompile Include="Search.cpp" />
-    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="..\..\cppsrc\Board.cpp" />
+    <ClCompile Include="..\..\cppsrc\Common.cpp" />
+    <ClCompile Include="..\..\cppsrc\ConsolePrt.cpp" />
+    <ClCompile Include="..\..\cppsrc\Evaluation.cpp" />
+    <ClCompile Include="..\..\cppsrc\Game.cpp" />
+    <ClCompile Include="..\..\cppsrc\Gmk1.cpp" />
+    <ClCompile Include="..\..\cppsrc\NN\GTP.cpp" />
+    <ClCompile Include="..\..\cppsrc\NN\Network.cpp" />
+    <ClCompile Include="..\..\cppsrc\NN\NNCache.cpp" />
+    <ClCompile Include="..\..\cppsrc\NN\nn_cpp.cpp" />
+    <ClCompile Include="..\..\cppsrc\NN\OpenCL.cpp" />
+    <ClCompile Include="..\..\cppsrc\NN\OpenCLScheduler.cpp" />
+    <ClCompile Include="..\..\cppsrc\NN\Random.cpp" />
+    <ClCompile Include="..\..\cppsrc\NN\SMP.cpp" />
+    <ClCompile Include="..\..\cppsrc\NN\Tuner.cpp" />
+    <ClCompile Include="..\..\cppsrc\NN\Utils.cpp" />
+    <ClCompile Include="..\..\cppsrc\PriorGomoku.cpp" />
+    <ClCompile Include="..\..\cppsrc\PriorRenju.cpp" />
+    <ClCompile Include="..\..\cppsrc\Search.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

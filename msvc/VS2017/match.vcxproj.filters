@@ -15,19 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="match.cpp">
+    <ClCompile Include="..\..\match\match.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Common.cpp">
+    <ClCompile Include="..\..\match\Board.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Board.cpp">
+    <ClCompile Include="..\..\match\Common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ConsolePrt.cpp">
+    <ClCompile Include="..\..\match\ConsolePrt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="..\..\match\Game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

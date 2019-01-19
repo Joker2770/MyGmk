@@ -42,54 +42,6 @@
     <ClInclude Include="net_config.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="NN\config.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\GTP.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\Im2Col.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\Network.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\nn_cpp.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\NNCache.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\OpenCL.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\OpenCLScheduler.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\Random.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\SMP.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\stdafx.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\targetver.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\ThreadPool.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\Tuner.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\Utils.h">
-      <Filter>NN</Filter>
-    </ClInclude>
-    <ClInclude Include="NN\CL\cl2.hpp">
-      <Filter>NN</Filter>
-    </ClInclude>
     <ClInclude Include="Common.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -99,67 +51,109 @@
     <ClInclude Include="PriorRenju.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\config.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\GTP.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\Im2Col.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\Network.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\nn_cpp.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\NNCache.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\OpenCL.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\OpenCLScheduler.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\Random.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\SMP.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\targetver.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\ThreadPool.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\Tuner.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\Utils.h">
+      <Filter>NN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cppsrc\NN\CL\cl2.hpp">
+      <Filter>NN</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Board.cpp">
+    <ClCompile Include="..\..\cppsrc\Board.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ConsolePrt.cpp">
+    <ClCompile Include="..\..\cppsrc\Gmk1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="..\..\cppsrc\Common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Search.cpp">
+    <ClCompile Include="..\..\cppsrc\Game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Evaluation.cpp">
+    <ClCompile Include="..\..\cppsrc\ConsolePrt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="NN\GTP.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="NN\Network.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="NN\nn_cpp.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="NN\NNCache.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="NN\OpenCL.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="NN\OpenCLScheduler.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="NN\Random.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="NN\SMP.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="NN\stdafx.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="NN\Tuner.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="NN\Utils.cpp">
-      <Filter>NN</Filter>
-    </ClCompile>
-    <ClCompile Include="Common.cpp">
+    <ClCompile Include="..\..\cppsrc\Evaluation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="PriorGomoku.cpp">
+    <ClCompile Include="..\..\cppsrc\PriorGomoku.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="PriorRenju.cpp">
+    <ClCompile Include="..\..\cppsrc\PriorRenju.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Gmk1.cpp">
+    <ClCompile Include="..\..\cppsrc\Search.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cppsrc\NN\GTP.cpp">
+      <Filter>NN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cppsrc\NN\Network.cpp">
+      <Filter>NN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cppsrc\NN\nn_cpp.cpp">
+      <Filter>NN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cppsrc\NN\NNCache.cpp">
+      <Filter>NN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cppsrc\NN\OpenCL.cpp">
+      <Filter>NN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cppsrc\NN\OpenCLScheduler.cpp">
+      <Filter>NN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cppsrc\NN\Random.cpp">
+      <Filter>NN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cppsrc\NN\SMP.cpp">
+      <Filter>NN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cppsrc\NN\Tuner.cpp">
+      <Filter>NN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cppsrc\NN\Utils.cpp">
+      <Filter>NN</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
