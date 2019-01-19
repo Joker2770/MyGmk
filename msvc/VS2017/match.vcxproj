@@ -74,6 +74,7 @@
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\packages\boost.1.66.0.0\lib\native\include</IncludePath>
     <LibraryPath>..\packages\boost_1_66_0\lib64-msvc-14.1;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;..\packages\boost_filesystem-vc141.1.66.0.0\lib\native;..\packages\boost_program_options-vc141.1.66.0.0\lib\native;..\packages\boost_system-vc141.1.66.0.0\lib\native</LibraryPath>
+    <IntDir>match\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -150,18 +151,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\match\Board.h" />
+    <ClInclude Include="..\..\match\Common.h" />
+    <ClInclude Include="..\..\match\ConsolePrt.h" />
+    <ClInclude Include="..\..\match\Game.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="..\..\match\Board.cpp" />
     <ClCompile Include="..\..\match\Common.cpp" />
     <ClCompile Include="..\..\match\ConsolePrt.cpp" />
     <ClCompile Include="..\..\match\Game.cpp" />
     <ClCompile Include="..\..\match\match.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Board.h" />
-    <ClInclude Include="Common.h" />
-    <ClInclude Include="ConsolePrt.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="targetver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

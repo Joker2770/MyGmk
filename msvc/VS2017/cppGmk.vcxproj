@@ -91,6 +91,7 @@
     <IncludePath>..\packages\boost_1_66_0;$(IncludePath)</IncludePath>
     <ReferencePath>$(ReferencePath);</ReferencePath>
     <LibraryPath>..\packages\boost_1_66_0\lib64-msvc-14.1;..\packages\boost_filesystem-vc141.1.66.0.0\lib\native;..\packages\boost_program_options-vc141.1.66.0.0\lib\native;..\packages\boost_system-vc141.1.66.0.0\lib\native;$(LibraryPath)</LibraryPath>
+    <IntDir>cppGmk\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
