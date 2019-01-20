@@ -161,6 +161,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\cppsrc\Board.h" />
+    <ClInclude Include="..\..\cppsrc\Common.h" />
+    <ClInclude Include="..\..\cppsrc\ConsolePrt.h" />
+    <ClInclude Include="..\..\cppsrc\Evaluation.h" />
+    <ClInclude Include="..\..\cppsrc\Game.h" />
+    <ClInclude Include="..\..\cppsrc\GameData.h" />
+    <ClInclude Include="..\..\cppsrc\net_config.h" />
     <ClInclude Include="..\..\cppsrc\NN\CL\cl2.hpp" />
     <ClInclude Include="..\..\cppsrc\NN\config.h" />
     <ClInclude Include="..\..\cppsrc\NN\GTP.h" />
@@ -176,17 +183,10 @@
     <ClInclude Include="..\..\cppsrc\NN\ThreadPool.h" />
     <ClInclude Include="..\..\cppsrc\NN\Tuner.h" />
     <ClInclude Include="..\..\cppsrc\NN\Utils.h" />
-    <ClInclude Include="Board.h" />
-    <ClInclude Include="ConsolePrt.h" />
-    <ClInclude Include="Evaluation.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="GameData.h" />
-    <ClInclude Include="net_config.h" />
-    <ClInclude Include="PriorGomoku.h" />
-    <ClInclude Include="PriorRenju.h" />
-    <ClInclude Include="Search.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="Common.h" />
+    <ClInclude Include="..\..\cppsrc\PriorGomoku.h" />
+    <ClInclude Include="..\..\cppsrc\PriorRenju.h" />
+    <ClInclude Include="..\..\cppsrc\Search.h" />
+    <ClInclude Include="..\..\cppsrc\targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\cppsrc\Board.cpp" />
