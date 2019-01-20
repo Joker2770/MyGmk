@@ -24,10 +24,10 @@
     <ClInclude Include="..\..\match\Common.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\match\ConsolePrt.h">
+    <ClInclude Include="..\..\match\Game.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\match\Game.h">
+    <ClInclude Include="..\..\match\ConsolePrt.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -41,10 +41,10 @@
     <ClCompile Include="..\..\match\Common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\match\ConsolePrt.cpp">
+    <ClCompile Include="..\..\match\Game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\match\Game.cpp">
+    <ClCompile Include="..\..\match\ConsolePrt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
