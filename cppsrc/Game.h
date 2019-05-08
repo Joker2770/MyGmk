@@ -17,14 +17,10 @@ private:
 	void unmake_move();
 	void reset();
 	void printWinner(int z);
-	int getPlayerClick(Coord & posresult);
 public:
 	void runGame(Player &player1, Player &player2);
-	void runGameUser(Player &player1, int col);
-	void runGameUser_Yuko(Player &player1, int col);
 	void runGameUser2();
 	void runGame_selfplay(Player &player);
-	void saveSGF(int col, int winner);
 	void runRecord(const std::vector<int> &moves);
 	void runFromFile(string filename);
 	void runGomocup(Player & player);
