@@ -1,6 +1,11 @@
-Based on fffasttime/Gmk0
+## Based on fffasttime/Gmk1
+referance to [Gmk1](https://github.com/fffasttime/Gmk1);
 
-Specialized for Gomoku, stronger than before.
+### strong gomoku game AI.
+Model after leela-zero of the most popular go AI.
+This program use [gomocup](http://petr.lastovicka.sweb.cz/protocl2en.htm)'s engine protocol.
+You can load this game engine by [piskvork](https://sourceforge.net/projects/piskvork/files/piskvork.zip/download);
 
-Only after 4 days of training(about 40000 games), this new version reached Gmk0's level.
-fast, ffast, fffast!
+### Referance
+[https://github.com/leela-zero/leela-zero](https://github.com/leela-zero/leela-zero);
+[https://gomocup.org/download-gomocup-manager/](https://gomocup.org/download-gomocup-manager/);
