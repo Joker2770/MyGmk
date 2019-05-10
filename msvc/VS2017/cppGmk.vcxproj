@@ -179,14 +179,12 @@
     <ClInclude Include="..\..\cppsrc\NN\OpenCLScheduler.h" />
     <ClInclude Include="..\..\cppsrc\NN\Random.h" />
     <ClInclude Include="..\..\cppsrc\NN\SMP.h" />
-    <ClInclude Include="..\..\cppsrc\NN\targetver.h" />
     <ClInclude Include="..\..\cppsrc\NN\ThreadPool.h" />
     <ClInclude Include="..\..\cppsrc\NN\Tuner.h" />
     <ClInclude Include="..\..\cppsrc\NN\Utils.h" />
     <ClInclude Include="..\..\cppsrc\PriorGomoku.h" />
     <ClInclude Include="..\..\cppsrc\PriorRenju.h" />
     <ClInclude Include="..\..\cppsrc\Search.h" />
-    <ClInclude Include="..\..\cppsrc\targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\cppsrc\Board.cpp" />

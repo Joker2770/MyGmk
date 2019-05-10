@@ -48,9 +48,6 @@
     <ClInclude Include="..\..\cppsrc\NN\SMP.h">
       <Filter>NN</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\cppsrc\NN\targetver.h">
-      <Filter>NN</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\cppsrc\NN\ThreadPool.h">
       <Filter>NN</Filter>
     </ClInclude>
@@ -91,9 +88,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\..\cppsrc\Search.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\cppsrc\targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
