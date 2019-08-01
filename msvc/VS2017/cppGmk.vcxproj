@@ -38,7 +38,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -84,7 +84,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <LibraryPath>..\packages\boost_filesystem-vc141.1.66.0.0\lib\native;..\packages\boost_program_options-vc141.1.66.0.0\lib\native;..\packages\boost_system-vc141.1.66.0.0\lib\native;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IntDir>$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -168,7 +169,6 @@
     <ClInclude Include="..\..\cppsrc\Game.h" />
     <ClInclude Include="..\..\cppsrc\GameData.h" />
     <ClInclude Include="..\..\cppsrc\net_config.h" />
-    <ClInclude Include="..\..\cppsrc\NN\CL\cl2.hpp" />
     <ClInclude Include="..\..\cppsrc\NN\config.h" />
     <ClInclude Include="..\..\cppsrc\NN\GTP.h" />
     <ClInclude Include="..\..\cppsrc\NN\Im2Col.h" />

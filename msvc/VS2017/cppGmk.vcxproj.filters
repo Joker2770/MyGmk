@@ -57,9 +57,6 @@
     <ClInclude Include="..\..\cppsrc\NN\Utils.h">
       <Filter>NN</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\cppsrc\NN\CL\cl2.hpp">
-      <Filter>NN</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\cppsrc\Board.h">
       <Filter>头文件</Filter>
     </ClInclude>
