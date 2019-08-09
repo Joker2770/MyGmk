@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __GAME_H__
+#define __GAME_H__
+
 #include "Board.h"
 #include "Common.h"
 #include "Search.h"
@@ -30,3 +32,5 @@ public:
 	int show_mode = 0;
 	int selfplay_count = 2048;
 };
+
+#endif

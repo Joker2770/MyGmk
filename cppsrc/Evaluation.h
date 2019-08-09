@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __EVALUATION_H__
+#define __EVALUATION_H__
+
 #include "Common.h"
 #include "Board.h"
 #include "NN/nn_cpp.h"
@@ -33,3 +35,5 @@ struct RawOutput
 std::pair<RawOutput, Board> getEvaluation(Board board, int col, NN *network, bool use_transform = true, int lastmove=-1);
 
 double vresultToWinrate(double v);
+
+#endif

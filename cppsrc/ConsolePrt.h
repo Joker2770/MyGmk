@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __CONSOLEPRT_H__
+#define __CONSOLEPRT_H__
+
 #include "Common.h"
 #include "Board.h"
 
@@ -21,3 +23,5 @@ void gotoXY(short x, short y);
 
 Coord MlocToPloc(const Coord &p);
 void print(Board &gameboard, int col = 0, int lastmove = -1);
+
+#endif

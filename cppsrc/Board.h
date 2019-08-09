@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __BOARD_H__
+#define __BOARD_H__
+
 #include "Common.h"
 
 bool inBorder(Coord a);
@@ -76,3 +78,5 @@ extern bool cfg_use_openings;
 
 int find_in_openingsBook(const Board &board);
 int load_openingsBook();
+
+#endif

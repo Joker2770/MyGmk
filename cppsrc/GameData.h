@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __GAMEDATA_H__
+#define __GAMEDATA_H__
 
 #include "Common.h"
 #include "Board.h"
@@ -226,3 +227,5 @@ struct DataSeries
 		}
 	}
 };
+
+#endif
