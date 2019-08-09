@@ -1,7 +1,7 @@
 // Gmk0.cpp: Import of console program.
 //
 #include "Game.h"
-#include "ConsolePrt.h"
+//#include "ConsolePrt.h"
 #include "Search.h"
 #include "Common.h"
 #include "PriorGomoku.h"
@@ -77,9 +77,9 @@ int run()
 	{
 		Player player1(network_file, playout, puct, true, true, 0.8f, 0.6f, 10);
 		cout << "selfplay data will be saved to " << output_file << endl;
-		minit();
+		//minit();
 		game.selfplay(player1);
-		mexit();
+		//mexit();
 	}
 	else if (mode == 1)
 	{
@@ -95,9 +95,9 @@ int run()
 	}
 	else
 	{
-		minit();
-		game.runGameUser2();
-		mexit();
+		//minit();
+		//game.runGameUser2();
+		//mexit();
 	}
 	return 0;
 }

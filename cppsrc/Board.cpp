@@ -128,7 +128,7 @@ BoardArray<unsigned long long> zobirst_table[3];
 void initZobristTable()
 {
 	std::mt19937 e(cfg_seed);
-	std::uniform_int<unsigned long long> u(0, 1ull<<63);
+	std::uniform_int_distribution<unsigned long long> u(0, 1ull<<63);
 	for (int i = 0; i < 3; i++)
 		for (int j = 0; j < BLSIZE; j++)
 		{

@@ -1,5 +1,5 @@
 #include "Game.h"
-#include "ConsolePrt.h"
+//#include "ConsolePrt.h"
 #include "Search.h"
 #include "Evaluation.h"
 #include <vector>
@@ -139,7 +139,7 @@ void Game::printWinner(int z)
 void Game::runGame(Player &player1, Player &player2)
 {
 	reset();
-	if (show_mode == 1) print(gameboard);
+	//if (show_mode == 1) print(gameboard);
 	while (gameboard.count() < BLSIZE)
 	{
 		Coord c;
@@ -148,8 +148,8 @@ void Game::runGame(Player &player1, Player &player2)
 		else
 			c = player2.run(gameboard, nowcol);
 		make_move(c);
-		if (show_mode == 1) print(gameboard);
-		else if (show_mode == 0) std::cout << c.format() << ' ';
+		//if (show_mode == 1) print(gameboard);
+		/*else */if (show_mode == 0) std::cout << c.format() << ' ';
 		if (judgeWin(gameboard))
 			break;
 	}
@@ -163,15 +163,15 @@ void Game::runGame_selfplay(Player &player)
 	reset();
 	vector<BoardWeight> policy;
 	vector<float> winrate;
-	if (show_mode==1) print(gameboard);
+	//if (show_mode==1) print(gameboard);
 	while (gameboard.count() < BLSIZE)
 	{
 		Coord c = player.run(gameboard, nowcol);
 		make_move(c);
 		policy.push_back(player.getlastPolicy());
 		winrate.push_back(player.searchlogger.winrate);
-		if (show_mode == 1) print(gameboard);
-		else if (show_mode == 0) std::cout << c.format() <<' ';
+		//if (show_mode == 1) print(gameboard);
+		/*else */if (show_mode == 0) std::cout << c.format() <<' ';
 		if (judgeWin(gameboard))
 			break;
 	}
@@ -186,13 +186,13 @@ void Game::runGame_selfplay(Player &player)
 void Game::runGameUser2()
 {
 	reset();
-	print(gameboard);
+	//print(gameboard);
 	while (gameboard.count() < BLSIZE)
 	{
 		Coord c;
-		c = getPlayerPos(gameboard);
+		//c = getPlayerPos(gameboard);
 		make_move(c);
-		print(gameboard);
+		//print(gameboard);
 		if (judgeWin(gameboard))
 			break;
 	}
@@ -223,13 +223,13 @@ void Game::match(Player &player1, Player &player2)
 void Game::runRecord(const vector<int> &moves)
 {
 	reset();
-	if (show_mode == 1) print(gameboard);
+	//if (show_mode == 1) print(gameboard);
 	for (auto move : moves)
 	{
 		Coord c(move);
 		make_move(c);
-		if (show_mode == 1) print(gameboard);
-		else if (show_mode == 0) std::cout << c.format() << ' ';
+		//if (show_mode == 1) print(gameboard);
+		/*else */if (show_mode == 0) std::cout << c.format() << ' ';
 	}
 	int winner = nowcol % 2 + 1;
 	if (gamestep == BLSIZE) winner = 0;
