@@ -40,9 +40,7 @@ int run()
 	cfg_seed = seed;
 	srand((unsigned)cfg_seed);
 
-	if (str_display[0] == 'b')
-		game.show_mode = 1;
-	else if (str_display[0] == 'n')
+	if (str_display[0] == 'n')
 		game.show_mode = 2;
 	{
 		boost::filesystem::path p(output_file);
@@ -113,7 +111,7 @@ int getOptionCmdLine(int argc, char ** argv)
 		("mode,m", po::value(&str_mode)->default_value("selfplay"), "p[rotrol], s[elfplay]")
 		("network,n", po::value(&network_file)->default_value("weight.txt"), "network file")
 		("output,o", po::value(&output_file)->default_value("selfplaydata.bin"), "selfplay output file")
-		("display,d", po::value(&str_display)->default_value("move"), "m[ove]: show move, b[oard]: show board, n[o]: close")
+		("display,d", po::value(&str_display)->default_value("move"), "m[ove]: show move, n[o]: close")
 		("playout,p", po::value(&playout)->default_value(400), "count of playouts")
 		("seed,s", po::value(&seed)->default_value(time(NULL)), "random seed")
 		("selfplaycount,c", po::value(&selfplay_count)->default_value(2048), "count of selfplay games")
