@@ -187,14 +187,14 @@ struct DataSeries
 	}
 	void writeByte(std::string filename)
 	{
-		std::ofstream out(filename, ios::binary);
+		std::ofstream out(filename, std::ios::binary);
 		out.write((char*)&count, 4);
 		for (auto &data : datas)
 			data.writeByte(out);
 	}
 	void readByte(std::string filename)
 	{
-		std::ifstream in(filename, ios::binary);
+		std::ifstream in(filename, std::ios::binary);
 		in.read((char *)&count,4);
 		if (!datas.empty()) datas.clear();
 		for (int i = 0; i < count; i++)

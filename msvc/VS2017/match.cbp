@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="match" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug x64">
+				<Option output="match" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-DD_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add directory="$(VC_IncludePath)" />
+					<Add directory="$(WindowsSDK_IncludePath)" />
+				</Compiler>
+				<Linker>
+					<Add directory="$(VC_LibraryPath_x64)" />
+					<Add directory="$(WindowsSDK_LibraryPath_x64)" />
+					<Add directory="$(NETFXKitsDir)Lib/um/x64" />
+				</Linker>
+			</Target>
+			<Target title="Release x64">
+				<Option output="match" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add directory="$(VC_IncludePath)" />
+					<Add directory="$(WindowsSDK_IncludePath)" />
+				</Compiler>
+				<Linker>
+					<Add directory="$(VC_LibraryPath_x64)" />
+					<Add directory="$(WindowsSDK_LibraryPath_x64)" />
+					<Add directory="$(NETFXKitsDir)Lib/um/x64" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="match" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add directory="$(IncludePath)" />
+				</Compiler>
+				<Linker>
+					<Add directory="$(LibraryPath)" />
+				</Linker>
+			</Target>
+			<Target title="Debug Win32">
+				<Option output="match" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add directory="../packages/boost_filesystem-vc141.1.66.0.0/lib/native" />
+					<Add directory="../packages/boost_program_options-vc141.1.66.0.0/lib/native" />
+					<Add directory="../packages/boost_system-vc141.1.66.0.0/lib/native" />
+					<Add directory="$(LibraryPath)" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../match/Board.cpp" />
+		<Unit filename="../../match/Board.h" />
+		<Unit filename="../../match/Common.cpp" />
+		<Unit filename="../../match/Common.h" />
+		<Unit filename="../../match/ConsolePrt.cpp" />
+		<Unit filename="../../match/ConsolePrt.h" />
+		<Unit filename="../../match/Game.cpp" />
+		<Unit filename="../../match/Game.h" />
+		<Unit filename="../../match/match.cpp" />
+		<Unit filename="packages.config" />
+		<Unit filename="targetver.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

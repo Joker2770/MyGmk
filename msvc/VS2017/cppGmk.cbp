@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="cppGmk" />
+		<Option pch_mode="2" />
+		<Option compiler="icc" />
+		<Build>
+			<Target title="Debug x64">
+				<Option output="cppGmk" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="icc" />
+				<Compiler>
+					<Add option="/D_DEBUG" />
+					<Add option="/D_CONSOLE" />
+					<Add directory="$(IncludePath)" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add directory="$(LibraryPath)" />
+				</Linker>
+			</Target>
+			<Target title="Release x64">
+				<Option output="cppGmk" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="icc" />
+				<Compiler>
+					<Add option="/DNDEBUG" />
+					<Add option="/D_CONSOLE" />
+					<Add directory="$(IncludePath)" />
+					<Add directory="E:/open_source/Gmk1/packages/boost.1.66.0.0/lib/native/include" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add directory="$(LibraryPath)" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="cppGmk" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="icc" />
+				<Compiler>
+					<Add option="/DWIN32" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add directory="$(LibraryPath)" />
+				</Linker>
+			</Target>
+			<Target title="Debug Win32">
+				<Option output="cppGmk" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="icc" />
+				<Compiler>
+					<Add option="/DWIN32" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add directory="../packages/boost_program_options-vc141.1.66.0.0/lib/native" />
+					<Add directory="../packages/boost_filesystem-vc141.1.66.0.0/lib/native" />
+					<Add directory="../packages/boost_system-vc141.1.66.0.0/lib/native" />
+					<Add directory="$(LibraryPath)" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../cppsrc/Board.cpp" />
+		<Unit filename="../../cppsrc/Board.h" />
+		<Unit filename="../../cppsrc/Common.cpp" />
+		<Unit filename="../../cppsrc/Common.h" />
+		<Unit filename="../../cppsrc/ConsolePrt.cpp" />
+		<Unit filename="../../cppsrc/ConsolePrt.h" />
+		<Unit filename="../../cppsrc/Evaluation.cpp" />
+		<Unit filename="../../cppsrc/Evaluation.h" />
+		<Unit filename="../../cppsrc/Game.cpp" />
+		<Unit filename="../../cppsrc/Game.h" />
+		<Unit filename="../../cppsrc/GameData.h" />
+		<Unit filename="../../cppsrc/Gmk1.cpp" />
+		<Unit filename="../../cppsrc/NN/GTP.cpp" />
+		<Unit filename="../../cppsrc/NN/GTP.h" />
+		<Unit filename="../../cppsrc/NN/Im2Col.h" />
+		<Unit filename="../../cppsrc/NN/NNCache.cpp" />
+		<Unit filename="../../cppsrc/NN/NNCache.h" />
+		<Unit filename="../../cppsrc/NN/Network.cpp" />
+		<Unit filename="../../cppsrc/NN/Network.h" />
+		<Unit filename="../../cppsrc/NN/OpenCL.cpp" />
+		<Unit filename="../../cppsrc/NN/OpenCL.h" />
+		<Unit filename="../../cppsrc/NN/OpenCLScheduler.cpp" />
+		<Unit filename="../../cppsrc/NN/OpenCLScheduler.h" />
+		<Unit filename="../../cppsrc/NN/Random.cpp" />
+		<Unit filename="../../cppsrc/NN/Random.h" />
+		<Unit filename="../../cppsrc/NN/SMP.cpp" />
+		<Unit filename="../../cppsrc/NN/SMP.h" />
+		<Unit filename="../../cppsrc/NN/ThreadPool.h" />
+		<Unit filename="../../cppsrc/NN/Tuner.cpp" />
+		<Unit filename="../../cppsrc/NN/Tuner.h" />
+		<Unit filename="../../cppsrc/NN/Utils.cpp" />
+		<Unit filename="../../cppsrc/NN/Utils.h" />
+		<Unit filename="../../cppsrc/NN/config.h" />
+		<Unit filename="../../cppsrc/NN/nn_cpp.cpp" />
+		<Unit filename="../../cppsrc/NN/nn_cpp.h" />
+		<Unit filename="../../cppsrc/PriorGomoku.cpp" />
+		<Unit filename="../../cppsrc/PriorGomoku.h" />
+		<Unit filename="../../cppsrc/PriorRenju.cpp" />
+		<Unit filename="../../cppsrc/PriorRenju.h" />
+		<Unit filename="../../cppsrc/Search.cpp" />
+		<Unit filename="../../cppsrc/Search.h" />
+		<Unit filename="../../cppsrc/net_config.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
