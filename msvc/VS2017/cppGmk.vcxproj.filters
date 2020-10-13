@@ -101,9 +101,6 @@
     <ClCompile Include="..\..\cppsrc\Game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\cppsrc\ConsolePrt.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\cppsrc\Evaluation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>

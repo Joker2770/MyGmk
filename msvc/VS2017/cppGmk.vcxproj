@@ -23,7 +23,7 @@
     <ProjectGuid>{28D3C0BD-EBF2-44EA-957D-EEDD10986876}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>cppGmk</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <ProjectName>cppGmk</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -189,7 +189,6 @@
   <ItemGroup>
     <ClCompile Include="..\..\cppsrc\Board.cpp" />
     <ClCompile Include="..\..\cppsrc\Common.cpp" />
-    <ClCompile Include="..\..\cppsrc\ConsolePrt.cpp" />
     <ClCompile Include="..\..\cppsrc\Evaluation.cpp" />
     <ClCompile Include="..\..\cppsrc\Game.cpp" />
     <ClCompile Include="..\..\cppsrc\Gmk1.cpp" />

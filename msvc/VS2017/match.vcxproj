@@ -23,7 +23,7 @@
     <ProjectGuid>{B85BFD09-2921-44E3-BF8B-F7449A15E6CE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>match</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -164,9 +164,6 @@
     <ClCompile Include="..\..\match\ConsolePrt.cpp" />
     <ClCompile Include="..\..\match\Game.cpp" />
     <ClCompile Include="..\..\match\match.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
