@@ -6,12 +6,10 @@ pysrc/__pycache__/
 pysrc/logs/
 pysrc/paras/
 pysrc/data/
-*.txt
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-!cppsrc/NN/I17.txt
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
