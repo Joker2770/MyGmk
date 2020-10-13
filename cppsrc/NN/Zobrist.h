@@ -26,55 +26,28 @@
     this Program grant you additional permission to convey the resulting
     work.
 */
+#ifndef ZOBRIST_H_INCLUDED
+#define ZOBRIST_H_INCLUDED
 
-#ifndef FASTSTATE_H_INCLUDED
-#define FASTSTATE_H_INCLUDED
+#include "config.h"
 
-#include <cstddef>
 #include <array>
-#include <string>
-#include <vector>
+#include <cstdint>
 
-#include "FullBoard.h"
+#include "FastBoard.h"
+#include "Random.h"
 
-class FastState {
+class Zobrist {
 public:
-    void init_game(int size, float komi);
-    void reset_game();
-    void reset_board();
+    static constexpr auto zobrist_empty = 0x1234567887654321;
+    static constexpr auto zobrist_blacktomove = 0xABCDABCDABCDABCD;
 
-    void play_move(int vertex);
-    bool is_move_legal(int color, int vertex) const;
+    static std::array<std::array<std::uint64_t, FastBoard::NUM_VERTICES>,     4> zobrist;
+    static std::array<std::uint64_t, FastBoard::NUM_VERTICES>                    zobrist_ko;
+    static std::array<std::array<std::uint64_t, FastBoard::NUM_VERTICES * 2>, 2> zobrist_pris;
+    static std::array<std::uint64_t, 5>                                          zobrist_pass;
 
-    void set_komi(float komi);
-    float get_komi() const;
-    void set_handicap(int hcap);
-    int get_handicap() const;
-    int get_passes() const;
-    int get_to_move() const;
-    void set_to_move(int tomove);
-    void set_passes(int val);
-    void increment_passes();
-
-    float final_score() const;
-    std::uint64_t get_symmetry_hash(int symmetry) const;
-
-    size_t get_movenum() const;
-    int get_last_move() const;
-    void display_state();
-    std::string move_to_text(int move);
-
-    FullBoard board;
-
-    float m_komi;
-    int m_handicap;
-    int m_passes;
-    int m_komove;
-    size_t m_movenum;
-    int m_lastmove;
-
-protected:
-    void play_move(int color, int vertex);
+    static void init_zobrist(Random& rng);
 };
 
 #endif

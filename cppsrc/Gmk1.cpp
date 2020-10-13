@@ -162,7 +162,7 @@ int getOptionJson()
 	catch (std::exception &err)
 	{
 		std::cout << "[Error] " << err.what() << std::endl;
-		system("pause");
+		//system("pause");
 		return 1;
 	}
 
