@@ -63,9 +63,6 @@
     <ClInclude Include="..\..\cppsrc\Common.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\cppsrc\ConsolePrt.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\cppsrc\Evaluation.h">
       <Filter>头文件</Filter>
     </ClInclude>

@@ -164,7 +164,6 @@
   <ItemGroup>
     <ClInclude Include="..\..\cppsrc\Board.h" />
     <ClInclude Include="..\..\cppsrc\Common.h" />
-    <ClInclude Include="..\..\cppsrc\ConsolePrt.h" />
     <ClInclude Include="..\..\cppsrc\Evaluation.h" />
     <ClInclude Include="..\..\cppsrc\Game.h" />
     <ClInclude Include="..\..\cppsrc\GameData.h" />
