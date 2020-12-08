@@ -1,6 +1,5 @@
 #include "Common.h"
 #include "Game.h"
-#include "ConsolePrt.h"
 #include <iostream>
 #include <string>
 #include <boost/program_options.hpp>
@@ -33,9 +32,7 @@ int run()
 	if (!p2.is_complete()) str_cmd2 = exepath + "/" + str_cmd2;
 	Player player1(str_cmd1, str_name1);
 	Player player2(str_cmd2, str_name2);
-	minit();
 	game.match(player1, player2);
-	mexit();
 	
 	return 0;
 }
@@ -78,7 +75,6 @@ int getOptionCmdLine(int argc, char ** argv)
 
 int main(int argc, char **argv)
 {
-	minit();
 	exepath = boost::filesystem::initial_path<boost::filesystem::path>().string();
 	try
 	{

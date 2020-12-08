@@ -1,4 +1,5 @@
 #include "Board.h"
+#include <string.h>
 
 bool inBorder(Coord a)
 {
@@ -31,6 +32,8 @@ void BoardArray<float>::clear()
 	for (int i = 0; i < BLSIZE; i++)
 		m[i] = 0;
 }
+
+template <>
 void BoardArray<int>::debug() const
 {/*
 	for (int i = 0; i<BSIZE; i++)

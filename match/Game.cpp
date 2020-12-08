@@ -1,6 +1,5 @@
 #include "Game.h"
 #include <algorithm>
-#include "ConsolePrt.h"
 using std::vector;
 
 bool cfg_show_information;
@@ -156,7 +155,7 @@ int Game::runGame(Player &player1, Player &player2)
 	reset();
 	player1.reset();
 	player2.reset();
-	if (show_mode == 1) print(gameboard);
+	//if (show_mode == 1) print(gameboard);
 	while (gamestep < BLSIZE)
 	{
 		Coord c;
@@ -170,8 +169,8 @@ int Game::runGame(Player &player1, Player &player2)
 		else
 			c = player2.turn_move(history.back());
 		make_move(c);
-		if (show_mode == 1) print(gameboard);
-		else if (show_mode == 0) std::cout << c.format() << ' ';
+		//if (show_mode == 1) print(gameboard);
+		/*else */if (show_mode == 0) std::cout << c.format() << ' ';
 		if (judgeWin(gameboard))
 			break;
 		gamestep++;
