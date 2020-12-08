@@ -8,7 +8,7 @@ You can load this game engine by [piskvork](https://sourceforge.net/projects/pis
 
 ### Install build depedencies
 ~~~shell
-sudo apt install cmake g++ libboost-dev libboost-program-options-dev libboost-filesystem-dev opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev zlib1g-dev
+sudo apt install cmake g++ libopenblas-dev libboost-dev libboost-program-options-dev libboost-filesystem-dev opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev zlib1g-dev
 ~~~
 
 ### Referance
