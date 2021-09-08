@@ -39,7 +39,6 @@
  * the GPU - some operations won't get any speedup from it.
  * Also used for OpenCL self-checks.
  */
-#define USE_BLAS
 /*
  * We use OpenBLAS by default, except on macOS, which has a fast BLAS
  * built-in. (Accelerate)
@@ -60,6 +59,7 @@
  * OpenCL drivers - the BLAS version is much faster for those.
  */
 #define USE_OPENCL
+
 /*
  * USE_TUNER: Expose some extra command line parameters that allow tuning the
  * search algorithm.
